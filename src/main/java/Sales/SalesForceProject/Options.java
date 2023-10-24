@@ -13,18 +13,26 @@ public class Options {
 	public static void main(String[] args) {
 		
 		
-	
+		WebDriver driver;
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--headless");
-		WebDriver driver = new ChromeDriver(opt);
+		 driver = new ChromeDriver(opt);
 		
 		driver.get("https://www.google.com");
-		System.out.println(driver.getTitle());
+		/*
+		 * String ActualTitle = driver.getTitle(); String ExpectedTitle = "google";
+		 * //Assert.assertEquals(ExpectedTitle, ActualTitle);*/
+		 System.out.println(driver.getTitle());
 		
-		System.out.println("Im working on github");
-		System.out.println("about me");
-	
 		
+			
+			  System.out.println("Im working on github"); System.out.println("about me");
+			  
+			  ChromeOptions opti = new ChromeOptions(); opti.addArguments("--headless");
+			  driver.get("https://www.amazon.com"); driver.getTitle();
+			  
+			  System.out.println(driver.getTitle());
+			 
 	
 	}
 	  
